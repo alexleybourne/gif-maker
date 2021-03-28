@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Windmill } from '@windmill/react-ui';
+import myTheme from './myTheme.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Windmill dark>
+    <Windmill dark theme={myTheme}>
       <App />
     </Windmill>
   </React.StrictMode>,
